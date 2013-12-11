@@ -6,6 +6,18 @@
    Author: Cholo De Villa
    ========================================================================== */
 
+// Reset the box-sizing
+
+*,
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+img {
+  vertical-align: middle;
+}
+
+
 /* Nimbus Sans */
 @font-face {
   font-family: 'NimbusSanNov';
@@ -76,6 +88,14 @@
 @link-color			:		#0096af;
 @link-color-hover	:		#000;
 
+.list-unstyled() {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.img-responsive {
+  .img-responsive();
+}
 
 .droid-font() {
 	font-family: 'Droid Serif', Georgia, "Times New Roman", Times, serif;
@@ -143,7 +163,7 @@ p {
 }
 
 .container {
-	width: 320px;
+	max-width: 1800px;
 	margin: 0 auto;
 	.clearfix();
 	.transition(all 1s ease);
@@ -540,10 +560,10 @@ a#footer-url {
 
 // For Mini-Tablets
 // =======================================
-@media (min-width: @screen-xs) {
+@media (min-width: 480px) {
 	.container {
 		width: auto;
-		max-width: 480px;
+//		max-width: 480px;
 	}
 
 	/* Layout */
@@ -568,8 +588,8 @@ a#footer-url {
 
 // For Large-Tablets/Small Desktops ~ 1024
 // =======================================
-@media (min-width: @screen-sm) {
-	.container {max-width: 768px;}
+@media (min-width: 768px) {
+//	.container {max-width: 768px;}
 
 	body {
 		font-size: 15px;
@@ -726,15 +746,11 @@ a#footer-url {
 	}
 }
 
-// For Regular Desktops
-// =======================================
-@media (min-width: @screen-md) {
-}
 
 // For Large Screens
 // =======================================
-@media (min-width: @screen-lg) {
-	.container {max-width: 1020px;}
+@media (min-width: 1020px) {
+//	.container {max-width: 1020px;}
 	
 	/* Listing */
 	#masonry .item {
@@ -800,3 +816,6 @@ a#footer-url {
 		clear: both;
 	}
 }
+
+
+
