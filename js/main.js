@@ -20,3 +20,10 @@ $(function(){
 	}
 });
 
+
+var $container = $('#masonry');
+// initialize
+$container.masonry({
+  itemSelector: '.item'
+});
+

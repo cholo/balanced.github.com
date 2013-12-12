@@ -93,9 +93,6 @@ img {
 	padding: 0;
 	list-style: none;
 }
-.img-responsive {
-  .img-responsive();
-}
 
 .droid-font() {
 	font-family: 'Droid Serif', Georgia, "Times New Roman", Times, serif;
@@ -358,7 +355,10 @@ a#footer-url {
 
 #masonry {
 	.clearfix();
+	width: 100%;
 	margin-bottom: 100px;
+	.item {width: 100%;}
+
 }
 
 .item {
@@ -383,7 +383,6 @@ a#footer-url {
 				left: 0;
 				right: 0;
 				bottom: 0;
-				.transition(all .5s ease);
 				background-color: transparent;
 				background-color: rgba(0, 0, 0, 0.15);			
 			}
@@ -819,3 +818,6 @@ a#footer-url {
 
 
 
+.img-responsive {
+  .img-responsive();
+}
